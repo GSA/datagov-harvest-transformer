@@ -17,6 +17,8 @@ require 'action_cable/engine'
 # require "sprockets/railtie"
 require 'rails/test_unit/railtie'
 
+require_relative '../lib/middleware/md_transformer'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -25,6 +27,9 @@ module MdtranslateApi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+
+    # intermediate transformation middleware
+    config.middleware.use MetadataTransformer
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

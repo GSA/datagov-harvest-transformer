@@ -23,7 +23,8 @@ gem 'psych', '< 4.0.0'
 
 gem 'adiwg-mdtranslator',
     git: 'https://github.com/GSA/mdTranslator.git',
-    branch: 'datagov'
+    # branch: 'feature/iso19115_3-reader'
+    branch: 'cleanup'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
