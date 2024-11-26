@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
+require 'newrelic_rpm'
+
 Rails.application.configure do
+  config.log_formatter = ::NewRelic::Agent::Logging::DecoratingFormatter.new
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

@@ -1,7 +1,10 @@
-app-name: mdtranslator
-space-name: development
-image-tag: development
+app_name: mdtranslator
+space_name: development
+image_tag: development
 
 instances: 1
 
-route-external: mdtranslator.app.cloud.gov
+route_external: mdtranslator.app.cloud.gov
+
+# New Relic
+new_relic_monitor_mode: false

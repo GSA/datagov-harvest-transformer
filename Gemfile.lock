@@ -137,6 +137,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
+    newrelic_rpm (9.16.0)
     nio4r (2.7.4)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
@@ -268,6 +269,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
+  newrelic_rpm (~> 9.16)
   psych (< 4.0.0)
   puma (~> 4.1)
   rails (~> 6.0.6, >= 6.0.6.1)
@@ -279,7 +281,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.3.4p94
+   ruby 3.2.5p208
 
 BUNDLED WITH
    2.5.18

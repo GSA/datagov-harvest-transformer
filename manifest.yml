@@ -1,11 +1,16 @@
 ---
 applications:
-- name: ((app-name))
+- name: ((app_name))
   buildpacks:
       - ruby_buildpack
   memory: 128M
   instances: ((instances))
   routes:
-      - route: ((route-external))    
+      - route: ((route_external))    
+  env:
+    NEW_RELIC_APP_NAME: ((app_name))-((space_name))
+    NEW_RELIC_HOST: gov-collector.newrelic.com
+    NEW_RELIC_MONITOR_MODE: ((new_relic_monitor_mode))
+    NEW_RELIC_CONFIG_FILE: /home/vcap/app/config/newrelic.yml
   stack: cflinuxfs4
   command: rails server

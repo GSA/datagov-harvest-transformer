@@ -1,4 +1,4 @@
-FROM ruby:3.3.4
+FROM ruby:3.2.5
 
 RUN apt-get update -q 
 

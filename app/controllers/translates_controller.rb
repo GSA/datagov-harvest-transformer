@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'logger'
+
 class TranslatesController < ApplicationController
   # POST /translates
   def create
@@ -13,6 +15,20 @@ class TranslatesController < ApplicationController
         reader: reader_name,
         writer: writer_name
       )
+
+    logger = Logger.new($stdout)
+
+    @md_return[:readerStructureMessages].each do |m|
+      logger.warn(m) if m.include? 'WARNING'
+      logger.info(m) if m.include? 'INFO'
+      logger.error(m) if m.include? 'ERROR'
+    end
+
+    @md_return[:readerValidationMessages].each do |m|
+      logger.warn(m) if m.include? 'WARNING'
+      logger.info(m) if m.include? 'INFO'
+      logger.error(m) if m.include? 'ERROR'
+    end
 
     @response_info = {}
     @response_info[:success] = true
