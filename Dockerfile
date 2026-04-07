@@ -1,4 +1,4 @@
-FROM ruby:3.2.8-bullseye
+FROM ruby:3.2.10-bookworm
 
 RUN apt-get update -q 
 
