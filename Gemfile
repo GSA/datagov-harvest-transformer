@@ -21,7 +21,7 @@ gem 'puma', '~> 5.6'
 gem 'newrelic_rpm', '~> 9.16'
 
 # downgrade psych in response to https://stackoverflow.com/questions/68802089/rails-couldnt-infer-whether-you-are-using-multiple-databases-from-your-database
-gem 'psych', '< 4.0.0'
+gem 'psych', '< 6.0.0'
 
 gem 'adiwg-mdtranslator',
     git: 'https://github.com/GSA/mdTranslator.git',
