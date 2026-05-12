@@ -81,7 +81,7 @@ GEM
     adiwg-mdjson_schemas (2.9.5)
     ast (2.4.3)
     base64 (0.3.0)
-    bootsnap (1.23.0)
+    bootsnap (1.24.3)
       msgpack (~> 1.2)
     builder (3.3.0)
     byebug (13.0.0)
