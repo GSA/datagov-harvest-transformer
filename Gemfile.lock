@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/GSA/mdTranslator.git
-  revision: 9291db44a7c0016ee3d76d2e46a38a098edfcbfe
+  revision: 124586c00e2b3bcc7462fe3709e4e571229fd7f7
   branch: master
   specs:
     adiwg-mdtranslator (2.20.0.pre.beta.5)
@@ -88,20 +88,20 @@ GEM
       reline (>= 0.6.0)
     coderay (1.1.3)
     concurrent-ruby (1.3.4)
-    crass (1.0.6)
+    crass (1.0.7)
     date (3.5.1)
     erubi (1.13.1)
     ffi (1.17.4-arm64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    i18n (1.14.8)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    json (2.19.3)
+    json (2.20.0)
     json-schema (2.8.1)
       addressable (>= 2.4)
     kramdown (2.5.2)
@@ -138,9 +138,9 @@ GEM
       net-protocol
     newrelic_rpm (9.24.0)
     nio4r (2.7.5)
-    nokogiri (1.19.2-arm64-darwin)
+    nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.2-x86_64-linux-gnu)
+    nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.28.0)
     parser (3.3.11.1)
@@ -243,7 +243,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.7.5)
+    zeitwerk (2.8.2)
 
 PLATFORMS
   arm64-darwin-25
