@@ -18,7 +18,7 @@ gem 'puma', '~> 5.6'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'newrelic_rpm', '~> 9.16'
+gem 'newrelic_rpm', '~> 10.4'
 
 # downgrade psych in response to https://stackoverflow.com/questions/68802089/rails-couldnt-infer-whether-you-are-using-multiple-databases-from-your-database
 gem 'psych', '< 4.0.0'
